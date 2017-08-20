@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Nerds - Каталог</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header class="main-header main-header--catalog">
+		<div class="container">
+			<div class="top-line clearfix">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/logo.png" alt="logotype">
+					</a>
+				</div>
+				<nav class="main-navigation">
+					<ul class="header-navigation">
+						<li class="header-navigation__item">
+							<a href="#" class="header-navigation__item__link">Студия</a>
+						</li>
+						<li class="header-navigation__item">
+							<a href="#" class="header-navigation__item__link">Клиенты</a>
+						</li>
+						<li class="header-navigation__item active">
+							<a href="catalog.html" class="header-navigation__item__link">Магазин</a>
+						</li>
+						<li class="header-navigation__item">
+							<a href="#" class="header-navigation__item__link">Контакты</a>
+						</li>
+						<li class="header-navigation__item header-navigation__item--cart">
+							<a href="#" class="header-navigation__item__link"><i class="fa fa-shopping-cart header-navigation__item__link__icon"></i>Корзина</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<h1 class="header-title">Добро пожаловать в магазин готовых макетов</h1>
+		</div>
+
+	</header>
+
+	<div class="container">
+		<section class="catalog clearfix">
+
+			<div class="catalog-left">
+				<form action="#" method="post">
+
+				<div class="price-filter">
+					<div class="price-filter__title">Стоимость:</div>
+
+					<div class="price-filter__shape">
+						<div class="price-filter__shape__regulator">
+							<div class="price-filter__shape__regulator__line">
+								<div class="price-filter__shape__regulator__line__selected"></div>
+							</div>
+						</div>
+						<div class="price-filter__shape__start-toggle start-toggle-change"></div>
+						<div class="price-filter__shape__end-toggle end-toggle-change"></div>
+					</div>
+
+				<div class="price-filter-range">
+					
+					<span class="price-filter-range__text">от</span>
+					<input class="price-filter-range__min-price" type="text" value="0">
+					<span class="price-filter-range__text">до</span>
+					<input class="price-filter-range__max-price" type="text" value="15 000">
+
+				</div>
+
+				</div>
+
+				<div class="choice-radio">
+					
+					<div class="choice-radio__title">Сетка:</div>
+					<input type="radio" name="radio" id="adaptive" value="adaptive" checked>
+					<label for="adaptive" class="choice-radio__label">Адаптивная</label>
+
+					<input type="radio" name="radio" id="responsive" value="responsive">
+					<label for="responsive" class="choice-radio__label">Резиновая</label>
+
+					<input type="radio" name="radio" id="fixed" value="fixed">
+					<label for="fixed" class="choice-radio__label">Фиксированная</label>
+
+				</div>
+
+				<div class="choice-checkbox">
+					
+					<div class="choice-checkbox__title">Сетка:</div>
+					<input type="checkbox" name="checkbox" id="adaptive" value="slider" checked>
+					<label for="adaptive" class="choice-checkbox__label">Слайдер</label>
+
+					<input type="checkbox" name="checkbox" id="adv" value="adv" disabled>
+					<label for="adv" class="choice-checkbox__label">Блок приемуществ</label>
+
+					<input type="checkbox" name="checkbox" id="news" value="news" checked>
+					<label for="news" class="choice-checkbox__label">Новости</label>
+
+					<input type="checkbox" name="checkbox" id="gallery" value="gallery">
+					<label for="gallery" class="choice-checkbox__label">Галерея</label>
+
+					<input type="checkbox" name="checkbox" id="cart" value="cart">
+					<label for="cart" class="choice-checkbox__label">Корзина</label>
+
+				</div>
+
+				<button class="btn btn--catalog">Показать</button>
+
+				</form>
+
+			</div>
+
+			<div class="catalog-right">
+				
+				<div class="catalog-sorting">
+					<span class="catalog-sorting__item catalog-sorting__item--no-link">Сортировать:</span>
+					<a href="#" class="catalog-sorting__item">По цене</a>
+					<a href="#" class="catalog-sorting__item">По типу</a>
+					<a href="#" class="catalog-sorting__item">По функционалу</a>
+
+					<div class="catalog-sorting__arrows">
+						<a href="#" class="catalog-sorting__arrows__arrow catalog-sorting__arrows__arrow--active"><i class="fa fa-caret-down"></i></a>
+						<a href="#" class="catalog-sorting__arrows__arrow"><i class="fa fa-caret-up"></i></a>
+					</div>
+
+				</div>
+
+				<div class="templates">
+					
+					<div class="templates__item">
+
+						<div class="templates__item-header">
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+						</div>
+
+						<img src="img/template___item-1.jpg" alt="template">
+
+						<div class="templates__item-info">
+
+							<h3 class="templates__item-info__title">Sunset</h3>
+							<p class="templates__item-info__description">Интерне-магазин с личным кабинетом</p>
+							<div class="templates__item-info-btn-wrap">
+								<a href="#" class="btn btn--template">10000 P.</a>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="templates__item">
+
+						<div class="templates__item-header">
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+						</div>
+
+						<img src="img/template___item-2.jpg" alt="template">
+
+						<div class="templates__item-info">
+
+							<h3 class="templates__item-info__title">Sunset</h3>
+							<p class="templates__item-info__description">Интерне-магазин с личным кабинетом</p>
+							<div class="templates__item-info-btn-wrap">
+								<a href="#" class="btn btn--template">10000 P.</a>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="templates__item">
+
+						<div class="templates__item-header">
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+						</div>
+
+						<img src="img/template___item-3.jpg" alt="template">
+
+						<div class="templates__item-info">
+
+							<h3 class="templates__item-info__title">Sunset</h3>
+							<p class="templates__item-info__description">Интерне-магазин с личным кабинетом</p>
+							<div class="templates__item-info-btn-wrap">
+								<a href="#" class="btn btn--template">10000 P.</a>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="templates__item">
+
+						<div class="templates__item-header">
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+						</div>
+
+						<img src="img/template___item-4.jpg" alt="template">
+
+						<div class="templates__item-info">
+
+							<h3 class="templates__item-info__title">Sunset</h3>
+							<p class="templates__item-info__description">Интерне-магазин с личным кабинетом</p>
+							<div class="templates__item-info-btn-wrap">
+								<a href="#" class="btn btn--template">10000 P.</a>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="templates__item">
+
+						<div class="templates__item-header">
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+						</div>
+
+						<img src="img/template___item-5.jpg" alt="template">
+
+						<div class="templates__item-info">
+
+							<h3 class="templates__item-info__title">Sunset</h3>
+							<p class="templates__item-info__description">Интерне-магазин с личным кабинетом</p>
+							<div class="templates__item-info-btn-wrap">
+								<a href="#" class="btn btn--template">10000 P.</a>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="templates__item">
+
+						<div class="templates__item-header">
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+							<i class="fa fa-circle	templates__item-header__circle"></i>
+						</div>
+
+						<img src="img/template___item-6.jpg" alt="template">
+
+						<div class="templates__item-info">
+
+							<h3 class="templates__item-info__title">Sunset</h3>
+							<p class="templates__item-info__description">Интерне-магазин с личным кабинетом</p>
+							<div class="templates__item-info-btn-wrap">
+								<a href="#" class="btn btn--template">10000 P.</a>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="catalog-pagination">
+					<a href="#" class="catalog-pagination__link catalog-pagination__link--active">1</a>
+					<a href="#" class="catalog-pagination__link">2</a>
+					<a href="#" class="catalog-pagination__link">3</a>
+					<a href="" class="btn btn--pagination-next-btn">Следующая</a>  <!-- модифицировать-скопировав стили каталога -->
+				</div>
+
+
+			</div>
+
+		</section>
+	</div>
+
+	<section class="map map--catalog">
+		<div class="container">
+			<div class="map__address">
+				<h3 class="map__address__title">Nёrds design studio</h3>
+				<p class="map__address__location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p class="map__address__contacts">тел. +7 (812) 275-75-75</p>
+				<div class="map__address__btn-wrap">
+					<a href="#" class="btn popup-enter">Напишите нам</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="map__google"></div>
+
+	</section>
+
+
+	<footer class="social">
+
+		<div class="container clearfix">
+			<div class="social__contacts">
+				<a href="#" class="social__contacts__item"><i class="fa fa-vk"></i></a>
+				<a href="#" class="social__contacts__item"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="social__contacts__item"><i class="fa fa-instagram"></i></a>
+			</div>
+			<div class="social__text">
+				<strong class="social__title">Давайте дружить, это выгодно!</strong>
+				<p class="social__text__sail">Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+<div class="popup">
+		<div class="popup-login-block">
+			<label class="popup__login" for="popup__login">Ваше имя:</label>
+			<input type="text" name="login" id="popup__login" placeholder="Представьтесь, пожалуйста" required>
+		</div>
+
+		<div class="popup-email-block">
+			<label class="popup__email" for="popup__email">Ваш e-mail:</label>
+			<input type="email" name="email" id="popup__email" placeholder="Для отправки ответа" required>
+		</div>
+
+		<label class="popup__text" for="popup__text">Текст письма:</label>
+		<textarea name="text" id="popup__text" placeholder="В свободной форме" required></textarea>
+		
+		<button type="submit" class="btn btn--popup">Отправить</button>
+
+		<a href="#" class="popup__close"></a>
+	</div>
+
+
+	<script src="js/scripts.min.js"></script>
+	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/js.js"></script>
+
+
+</body>
+</html>
